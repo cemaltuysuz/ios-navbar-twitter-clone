@@ -11,7 +11,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        // Define and init Image
+        let image = UIImage(named: "twitterlogo")?.withTintColor(.white)
+        self.navigationItem.titleView = UIImageView(image: image)
     }
 
 
